@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.signup{
+    display: none;
+}
+
+.subscribe{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    color: hsl(234, 29%, 20%);
+}
+.subscribe h1{
+    font-size: 2.5rem;
+}
+.characteristics div{
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    margin: 1rem 0;
+}
+
+form label{
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+form input{
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    margin-bottom: 1.5rem;
+}
+form button{
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: none;
+    color: white;
+    background-color:hsl(234, 29%, 20%) ;
+    border-radius: 0.5rem;
+}
+
+/* Thanks Component*/
+
+.thanks{
+    padding: 1.5rem;
+    position: relative;
+    min-height: 100vh;
+}
+.thanks img{
+    margin: 5rem 0 1.5rem 0;
+    width: 3.5rem;
+}
+.thanks h2{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+.thanks button{
+    position: absolute;
+    bottom: 3rem;
+    width: 86%;
+    padding: 1rem;
+    border: none;
+    color: white;
+    background-color:hsl(234, 29%, 20%) ;
+    border-radius: 0.5rem;
+
+}
