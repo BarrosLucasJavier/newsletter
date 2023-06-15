@@ -8,9 +8,13 @@
     font-size: 1rem;
 }
 .signup{
-    display: none;
+    background-color: white;
 }
-
+.signup-img img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
 .subscribe{
     padding: 1.5rem;
     display: flex;
@@ -31,8 +35,12 @@
 
 form label{
     font-size: 0.8rem;
-    display: block;
     margin-bottom: 0.5rem;
+}
+form div{
+    display: flex;
+    justify-content: space-between;
+    max-width: 44rem;
 }
 form input{
     width: 100%;
@@ -40,6 +48,7 @@ form input{
     border-radius: 0.5rem;
     border: 1px solid grey;
     margin-bottom: 1.5rem;
+    max-width: 44rem;
 }
 form button{
     width: 100%;
@@ -48,14 +57,24 @@ form button{
     color: white;
     background-color:hsl(234, 29%, 20%) ;
     border-radius: 0.5rem;
+    max-width: 44rem;
+    box-shadow: 0 1rem 2rem rgba(255, 84, 118, 0.542) ;
 }
-
+form button:hover{
+    background: rgb(255,84,119);
+    background: linear-gradient(90deg, rgba(255,84,119,1) 0%, rgba(255,105,61,1) 100%);
+    cursor: pointer;
+}
 /* Thanks Component*/
 
 .thanks{
     padding: 1.5rem;
-    position: relative;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:hsl(234, 29%, 20%) ;
+    display: none;
 }
 .thanks img{
     margin: 5rem 0 1.5rem 0;
@@ -66,13 +85,70 @@ form button{
     margin-bottom: 1rem;
 }
 .thanks button{
-    position: absolute;
-    bottom: 3rem;
-    width: 86%;
+    max-width: 700px;
+    width: 100%;
     padding: 1rem;
     border: none;
     color: white;
     background-color:hsl(234, 29%, 20%) ;
     border-radius: 0.5rem;
-
+    margin: 0 auto;
+    box-shadow: 0 1rem 2rem rgba(255, 84, 118, 0.542) ;
+}
+.thanks button:hover{
+    background: rgb(255,84,119);
+    background: linear-gradient(90deg, rgba(255,84,119,1) 0%, rgba(255,105,61,1) 100%);
+    cursor: pointer;
+}
+/*Error*/
+.error{
+    font-size: 0.7rem;
+    color: tomato;    
+}
+.input-error{
+    color: tomato;
+    border: 1px solid tomato;
+    background-color: rgba(255, 99, 71, 0.212);
+}
+.disable{
+    display: none;
+}
+/* Media Querie*/
+@media (min-width:1440px){
+    body{
+        background-color:hsl(234, 29%, 20%) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .signup{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 60vw;
+        border-radius: 1rem;
+    }
+    .signup-img{
+        padding: 1rem;
+    }
+    .signup-img img{
+        object-position: 70% 50%;
+        height: 100%;
+        border-radius: 1rem;
+    }
+    .subscribe{
+        padding: 3rem;
+    }
+    .thanks{
+        max-width: 25rem;
+        background-color: white;
+        min-height: 18rem;
+        padding: 3rem;
+        border-radius: 1rem;
+        gap: 2rem;
+    }
+    .thanks img{
+        margin: 1rem 0;
+    }
+    
 }
